@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koleksi - Student Stock</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Student Stock</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="koleksi.html">Koleksi</a></li>
+    </ul>
+</nav>
+
+<section class="products">
+
+<h1 class="title">Koleksi Produk</h1>
+
+<div class="grid">
+
+<!-- PRODUK -->
+<div class="grid">
+
+<div class="card">
+    <img src="casualan.jpg">
+    <h3>Jacket Uggle C.P Company</h3>
+    <p>Rp.1.650.000</p>
+    <button onclick="addCart('Jacket Uggle C.P Company',1650000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="didas.jpg">
+    <h3>Jacket Adidas Cheongsam</h3>
+    <p>Rp.1.950.000</p>
+    <button onclick="addCart('Jacket Adidas Cheongsam',1950000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="jb.jpg">
+    <h3>Jacket James Boogie</h3>
+    <p>Rp.880.000</p>
+    <button onclick="addCart('Jacket James Boogie',880000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="jaket adidas.jpg">
+    <h3>Jacket Adidas</h3>
+    <p>Rp.520.000</p>
+    <button onclick="addCart('Jacket Adidas',520000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="fred.jpg">
+    <h3>T-Shirt Fred Ferry</h3>
+    <p>Rp.450.000</p>
+    <button onclick="addCart('T-Shirt Fred Ferry',450000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="kappa.jpg">
+    <h3>Celana Track Pants Kappa</h3>
+    <p>Rp.310.000</p>
+    <button onclick="addCart('Celana Track Pants Kappa',310000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="dm.jpg">
+    <h3>Sepatu DocMart</h3>
+    <p>Rp.650.000</p>
+    <button onclick="addCart('Sepatu DocMart',650000)">Tambah Keranjang</button>
+</div>
+
+<div class="card">
+    <img src="adidasekek.jpg">
+    <h3>Sneakers Adidas</h3>
+    <p>Rp.3.500.000</p>
+    <button onclick="addCart('Sneakers Adidas',3500000)">Tambah Keranjang</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- CART -->
+<div class="cart">
+
+<h2>Keranjang 🛒</h2>
+
+<ul id="cartList"></ul>
+
+<p>Total: <span id="total">0</span></p>
+
+<button onclick="checkout()">Checkout WhatsApp</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
